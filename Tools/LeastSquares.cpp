@@ -4,20 +4,6 @@ Purpose: To estimate points on a curve using the least squares method
 Functions: dblEstimate(), dblError(), voidSummations(), voidForwardElim(), voidBackSub(), voidSwapValues()
 */
 
-/*
-Hand-Derived Normal Equations for y = alnx + bsinx + c:
-phi(a,b,c) = Sum0-9(alnx + bsinx + c -y)^2
-
-d-phi/d-a = Sum0-9(2*lnx*(alnx + bsinx + c -y))
-d-phi/d-a = a*Sum0-9((lnx)^2) + b*Sum0-9(sinx*lnx) + c*Sum0-9(lnx) = y*Sum0-9(lnx)
-
-d-phi/d-b = Sum0-9(2*sinx*(alnx + bsinx + c -y))
-d-phi/d-b = a*Sum0-9(sinx*lnx) + b*Sum0-9((sinx)^2) + c*Sum0-9(sinx) = y*Sum0-9(sinx)
-
-d-phi/d-c = Sum0-9(2*(alnx + bsinx + c -y))
-d-phi/d-c = a*Sum0-9(lnx) + b*Sum0-9(sinx) + c*Sum0-9(1) = y*Sum0-9(1)
-*/
-
 #include "stdafx.h"
 #include <iostream>
 #include <algorithm>
