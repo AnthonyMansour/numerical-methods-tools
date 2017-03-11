@@ -2,6 +2,7 @@
 *A foundational set of numerical methods tools*
 
 Table of Contents:
+
 1. [DecToBin](../blob/master/Tools/DecToBin.cpp) - *Converts decimal base numbers into binary, up to 16 bits*
 
 2. [NLRoots_NewtonSecant](../blob/master/Tools/NLRoots_NewtonSecant.cpp) - *Approximates a root of non-linear formulas using the Newton's and the Secant method*
